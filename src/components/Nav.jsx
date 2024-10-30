@@ -1,6 +1,9 @@
-export default function Nav({ articles, setArticle }) {
+export default function Nav({ articles, setArticle, setWriting }) {
   return (
     <nav>
+      <button className="new-article-button" onClick={() => setWriting(true)}>
+        New Article
+      </button>
       {!articles
         ? "No articles"
         : articles.map((a) => (
@@ -9,5 +12,5 @@ export default function Nav({ articles, setArticle }) {
             </p>
           ))}
     </nav>
-  )
+  );
 }

@@ -1,24 +1,89 @@
 body {
+  width: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  font-family: "IBM Plex Sans";
+  color: #0f0137;
+  background-image: url("background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@font-face {
+  font-family: IBM Plex Sans;
+  src: url(IBMPlexSans.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: Gill Sans;
+  src: url(GillSans.ttf) format("truetype");
 }
 
 .App {
   display: grid;
   grid-template-rows: min-content auto;
   grid-template-columns: 250px auto;
-  height: 100vh;
-  overflow: scroll;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.logo img {
+  width: 50px;
+  height: auto;
+  padding-left:10px;
+  padding-top: 2px;
 }
 
 header {
   display: flex;
   justify-content: space-between;
-  background-color: black;
+  background-color: #020c32;
   color: white;
   grid-column: 1 / span 2;
-  padding: 10px 5px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 25px;
 }
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5em;
+  font-family: "Gill Sans";
+}
+
+
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75em;
+}
+
+.header-right button {
+  align-self: center;
+  margin-top: auto;
+  padding: 10px;
+  background-color: #1f35a5;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "IBM Plex Sans";
+}
+
+.blog-description {
+  grid-column: 1 / span 2;
+  padding: 10px;
+  max-height: 50px;
+  font-size: 1.2em;
+  text-align: center;
+  color: white;
+  background-color: #1f35a5;
+}
+
 
 form {
   padding: 10px;
@@ -35,12 +100,32 @@ form textarea {
 
 nav,
 article {
-  height: 100%;
   padding: 10px;
+  padding-left: 15px;
+}
+
+article {
+  padding-left: 20px;
+  font-size: 20px;
 }
 
 nav {
-  background-color: #dee9ff;
+  background-color: #0b1075;  
+  color: white;
+  min-height: 560px;
+  font-weight: bold;
+}
+
+.new-article-button {
+  align-self: center;
+  margin-top: auto;
+  padding: 10px;
+  background-color: #1f35a5;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "IBM Plex Sans";
 }
 
 nav p:hover {
@@ -58,6 +143,6 @@ article .body {
 
 .error {
   background-color: red;
-  color: gold;
+  color: white;
   padding: 5px;
 }
