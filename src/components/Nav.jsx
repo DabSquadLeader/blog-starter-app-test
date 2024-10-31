@@ -11,6 +11,8 @@ export default function Nav({ articles, setArticle, setWriting }) {
               {a.title}
             </p>
           ))}
+      <div>
+      </div>
     </nav>
   );
 }

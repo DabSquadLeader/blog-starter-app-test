@@ -20,6 +20,7 @@ export default function Article({ article }) {
           <p className="body">{article.body}</p>
         </section>
       )}
+      
     </article>
   );
 }
