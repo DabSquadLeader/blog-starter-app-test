@@ -29,7 +29,7 @@ body {
 }
 
 .logo img {
-  width: 2.85rem;
+  width: 4rem;
   height: auto;
   padding-left: 0.7rem;
   padding-top: 0.25rem;
@@ -144,7 +144,7 @@ article {
 article {
   max-width: 100%;
   overflow: hidden;
-  background-image: url("background.png");
+  /* background-image: url("background.png"); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -220,6 +220,10 @@ a:visited {
 }
 
 @media (max-width: 680px) {
+  body {
+    background-color: #6988e5;
+  }
+  
   .App {
     grid-template-rows: min-content auto auto auto auto;
     grid-template-columns: 1fr;
@@ -232,15 +236,15 @@ a:visited {
   }
 
   .logo img {
-    width: 30px;
+    width: 3.75rem;
     height: auto;
     padding-left: 5px;
     padding-top: 5px;
   }
 
   .user-profile-image {
-    width: 1.8rem;
-    height: 1.8rem;
+    width: 2.5rem;
+    height: auto;
     margin-right: 7px;
   }
 
@@ -254,6 +258,8 @@ a:visited {
   article {
     grid-row: 3;
     grid-column: 1;
+    min-height: 10rem;
+    background-image: url("background2.png");
   }
 
   .create-article {
@@ -264,7 +270,7 @@ a:visited {
   nav {
     grid-row: 5;
     grid-column: 1;
-    min-height: 550px;
+    min-height: 200px;
   }
 
   article .body {
