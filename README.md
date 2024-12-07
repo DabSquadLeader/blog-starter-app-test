@@ -41,6 +41,5 @@
 8. **BlogDesc.js**: Displays the blog’s description:
    - Enhances branding by providing context about BlueBlog’s purpose and functionality.
 
-## License
-
-© 2024 Colin Bajo-Smith. All rights reserved.
+- [GitHub Link](https://github.com/DabSquadLeader/blueblog-blog-app) - Project code repository.
+- [Website Link](https://new-project-f5211.web.app/) - Project code repository.
